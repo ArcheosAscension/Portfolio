@@ -1,15 +1,17 @@
-<html>
-    <head lang="en-US">
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
         <meta charset="UTF-8">
     
-        <link rel="stylesheet" href="/Portfolio/css/Sample.css">
+        <!-- <link rel="stylesheet" href="/Portfolio/css/Sample.css">
         <link rel="stylesheet" href="/Portfolio/css/main.css">
-        <script type="text/javascript" src="/Portfolio/js/main.js"></script>
+        <script type="text/javascript" src="/Portfolio/js/main.js"></script> -->
 
-<!--    <link rel="stylesheet" href="css/Sample.css">
+        <link rel="stylesheet" href="css/Sample.css">
         <link rel="stylesheet" href="css/main.css">
-        <script type="text/javascript" src="js/main.js"></script> -->
+        <script type="text/javascript" src="js/main.js"></script>
 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:bold">
         <title>Jack's Portfolio</title>
     </head>
     
@@ -20,34 +22,98 @@
         <header>
             <nav>
                 <ul>
-                    <h1>FantasyLand</h1>
-                    <a href="">Bookmarks</a>
-                    <a href="">Series</a>
-                    <a href="">Resources</a>
+                    <li>
+                        <h1>FantasyLand</h1>
+                    </li>
+                    <li>
+                        <a href="">Bookmarks</a>
+                    </li>
+                    <li>
+                        <a href="">Series</a>
+                    </li>
+                    <li>
+                        <a href="">Resources</a>
+                    </li>
                 </ul>
                 <ul>
-                    <label for="search">
-                        <input placeholder="Search" type="search" id="search" name="search">
-                    </label>
+                    <li>
+                        <label for="search">
+                            <input placeholder="Search" type="search" id="search" name="search">
+                        </label>
+                    </li>
+                    <li>
+                        <figure>
+                            <img alt="VIP Button" src=""/>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img alt="Dark Mode/Light Mode" src=""/>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="" class="button"><img alt="Bookmarks" src=""/></a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="" class="button"><img alt="Dropdown Menu" src=""/></a>
+                        </figure>
+                    </li>
                 </ul>
             </nav>
         </header>
         
     <!--Announcements-->
-        <aside>
-            <h2>Announcements</h2>
+        <aside class="debug">
             <div class="wrapper">
-                <ul>
-                    <li>
-                        <button type="button">Website Announcements</button>
-                    </li>
-                    <li>
-                        <button type="button">Translator Announcements</button>
-                    </li>
-                </ul>
-                <div class="announcementFeed">
+                <h2>Announcements</h2>
+                <div class="tabs">
+                    <button type="button" class="active" id="websiteAnnouncements" onclick=tabAnnouncements(this);>Website Announcements</button>
+                    <button type="button" class="" id="translatorAnnouncements" onclick=tabAnnouncements(this);>Translator Announcements</button>
                 </div>
-                <div>
+                <div class="announcementFeed">
+                    <div class="announcementContent">
+                        <div class="announcementTitle">
+                            <a href="">Title</a>
+                        </div>
+                        <div class="announcementDetails">
+                            <p>Time</p>
+                            <p>Author</p>
+                        </div>
+                    </div>
+                    <div class="announcementContent">
+                        <div class="announcementTitle">
+                            <a href="">Title</a>
+                        </div>
+                        <div class="announcementDetails">
+                            <p>Time</p>
+                            <p>Author</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="announcementFeed">
+                    <div class="announcementContent">
+                        <div class="announcementTitle">
+                            <a href="">Title</a>
+                        </div>
+                        <div class="announcementDetails">
+                            <p>Time</p>
+                            <p>Author</p>
+                        </div>
+                    </div>
+                    <div class="announcementContent">
+                        <div class="announcementTitle">
+                            <a href="">Title</a>
+                        </div>
+                        <div class="announcementDetails">
+                            <p>Time</p>
+                            <p>Author</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="linkAway">
                     <a href="">More Announcements</a>
                 </div>
             </div>
@@ -94,8 +160,8 @@
 
         <!--Recently Updated List-->
             <section id="recentlyUpdated">
-                <caption><h2>Most Recently Updated</h2></caption>
                 <table>
+                    <caption><h2>Most Recently Updated</h2></caption>
                     <thead>
                         <tr>
                             <th>Title</th>

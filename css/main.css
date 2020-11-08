@@ -1,3 +1,134 @@
 html,body{
     height: 100vmin;
 }
+
+.debug{
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+
+
+
+/* Main & Semantic Element Styling */
+body{
+    background-color: #fff;
+}
+
+nav{
+    background-color: #c4dbe0;
+}
+
+aside{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #c4dbe0;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #c4dbe0;
+}
+
+
+h2{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: .5vh 0vw;
+    padding: .5vh .5vw;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+
+/* Announcements-specific Styling */
+aside a{
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 110%;
+    color: #000;
+}
+
+
+
+.tabs{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.tabs .active{
+    background-color: #00a8a8;
+    color: #fff;
+}
+
+.tabs button{
+    border: none;
+    padding: 15px;
+    width: 50%;
+    background-color: #0c6980;
+    color: #d1d1d1;
+    font-size: 1.1em;
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.tabs button:focus{
+    outline: none;
+    text-decoration: underline;
+}
+
+.tabs button:hover{
+    text-decoration: underline;
+}
+
+
+
+.announcementFeed{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #00a8a8;
+}
+
+.announcementContent{
+    width: 50%;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 1vh 1vw;
+    margin: 2vh 1vw;
+}
+
+.announcementTitle{
+    margin-bottom: 1vh;
+}
+
+.announcementDetails{
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkAway{
+    text-align: right;
+    font-size: .8em;
+    text-decoration: underline;
+    padding: .5vh .5vw;
+}
+
+
+
+/* Newest Series-specific Styling */
+
+
+
+
+/* Most Recently Updated-specific Styling */
