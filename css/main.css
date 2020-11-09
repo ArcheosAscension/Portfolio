@@ -1,3 +1,5 @@
+/* Debug */
+
 html,body{
     height: 100vmin;
 }
@@ -7,16 +9,87 @@ html,body{
     border-radius: 5px;
 }
 
+h1{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h2{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+figure{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
 
 
+
+
+
+
+
+
+/* Header & Nav Styling */
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #313131;
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul>li{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav:first-child a{
+    font-family: "Open Sans", Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #9d9d9d;
+    font-size: 1em;
+}
+
+nav h1{
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+
+#search{
+    padding: .8vh .5vw;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    font-family: Arial, sans-serif;
+    font-size: .9em;
+}
 
 /* Main & Semantic Element Styling */
 body{
     background-color: #fff;
-}
-
-nav{
-    background-color: #c4dbe0;
 }
 
 aside{
@@ -31,11 +104,8 @@ main{
     background-color: #c4dbe0;
 }
 
-
-h2{
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin: .5vh 0vw;
+h2{ 
+    margin: 0vh 0vw .5vh 0vw;
     padding: .5vh .5vw;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 150%;
@@ -43,10 +113,6 @@ h2{
     font-weight: 700;
 }
 
-p{
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
 
 
 
@@ -74,13 +140,14 @@ aside a{
 }
 
 .tabs button{
-    border: none;
+    border-style: none;
     padding: 15px;
     width: 50%;
     background-color: #0c6980;
     color: #d1d1d1;
     font-size: 1.1em;
     font-family: "Open Sans", Helvetica, sans-serif;
+    cursor: pointer;
 }
 
 .tabs button:focus{
@@ -127,8 +194,21 @@ aside a{
 
 
 /* Newest Series-specific Styling */
-
+/*#newestSeries h2{
+    padding-top: 20px;
+}*/
 
 
 
 /* Most Recently Updated-specific Styling */
+/*#recentlyUpdated h2{
+    margin-top: 20px;
+}*/
+
+
+
+
+footer{
+    background-color: #313131;
+    height: 12.5vh;
+}

@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
     
-        <link rel="stylesheet" href="/Portfolio/css/Sample.css">
+        <!-- <link rel="stylesheet" href="/Portfolio/css/Sample.css">
         <link rel="stylesheet" href="/Portfolio/css/main.css">
-        <script type="text/javascript" src="/Portfolio/js/main.js"></script>
+        <script type="text/javascript" src="/Portfolio/js/main.js"></script> -->
 
-        <!-- <link rel="stylesheet" href="css/Sample.css">
+        <link rel="stylesheet" href="css/Sample.css">
         <link rel="stylesheet" href="css/main.css">
-        <script type="text/javascript" src="js/main.js"></script> -->
+        <script type="text/javascript" src="js/main.js"></script>
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:bold">
         <title>Jack's Portfolio</title>
@@ -43,22 +43,22 @@
                     </li>
                     <li>
                         <figure>
-                            <img alt="VIP Button" src=""/>
+                            <img alt="VIP Button" src="../../circle.png"/>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img alt="Dark Mode/Light Mode" src=""/>
+                            <img alt="Dark Mode/Light Mode" src="../../circle.png"/>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <a href="" class="button"><img alt="Bookmarks" src=""/></a>
+                            <a href="" class="button"><img alt="Bookmarks" src="../../circle.png"/></a>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <a href="" class="button"><img alt="Dropdown Menu" src=""/></a>
+                            <a href="" class="button"><img alt="Dropdown Menu" src="../../circle.png"/></a>
                         </figure>
                     </li>
                 </ul>
@@ -66,14 +66,14 @@
         </header>
         
     <!--Announcements-->
-        <aside class="debug">
+        <aside>
             <div class="wrapper">
                 <h2>Announcements</h2>
                 <div class="tabs">
                     <button type="button" class="active" id="websiteAnnouncements" onclick=tabAnnouncements(this);>Website Announcements</button>
                     <button type="button" class="" id="translatorAnnouncements" onclick=tabAnnouncements(this);>Translator Announcements</button>
                 </div>
-                <div class="announcementFeed">
+                <div class="announcementFeed" id="announcementFeed1">
                     <div class="announcementContent">
                         <div class="announcementTitle">
                             <a href="">Title</a>
@@ -83,17 +83,17 @@
                             <p>Author</p>
                         </div>
                     </div>
-                    <div class="announcementContent">
-                        <div class="announcementTitle">
+                    <div class="announcementContent" id="announcementContent2">
+                        <div class="announcementTitle" id="announcementTitle2">
                             <a href="">Title</a>
                         </div>
-                        <div class="announcementDetails">
+                        <div class="announcementDetails" id="announcementDetails2">
                             <p>Time</p>
                             <p>Author</p>
                         </div>
                     </div>
                 </div>
-                <div class="announcementFeed">
+                <div class="announcementFeed" id="announcementFeed2">
                     <div class="announcementContent">
                         <div class="announcementTitle">
                             <a href="">Title</a>
@@ -299,7 +299,7 @@
 
     <!--Footer-->
         <footer>
-
+            <p> test </p>
         </footer>
 
     </body>
