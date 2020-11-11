@@ -14,3 +14,17 @@ function tabAnnouncements(tabElement){
         //document.getElementById("announcementFeed2").innerHTML = "";
     }
 }
+
+var dropdownopen = false
+function dropdownOpen(){
+    if (dropdownopen == false){
+        document.getElementById("dropdown").style.display = "block";
+        document.getElementById("dropdownParent").style.backgroundColor = "#000";
+        dropdownopen = true;
+    }
+    else{
+        document.getElementById("dropdown").style.display = "none";
+        document.getElementById("dropdownParent").style.backgroundColor = "";
+        dropdownopen = false;
+    }
+}
